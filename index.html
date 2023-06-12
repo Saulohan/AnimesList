@@ -5,26 +5,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animes Populares</title>
-  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/css/style.css">
 
 </head>
 
 <body>
 
     <div class="container">
-        <header>
-            <img class="logo" src="/src/images/logo.png" alt="logo">
+        
+        <div class="containerHeader">
+            <header>
+                <div class="headerLeft">
+                    <a href="/"><img class="logo" src="/src/images/logo.png" alt="logo"></a>
+                    <div class="headerLink">
+                        <a href="/"> Inicio</a>
+                        <a href=""> Pesquisar</a>
+                        <a href=""> Termo</a>
+                    </div>
+                   
+                </div>
+                
+                <div class="inputContainer">
+                    <input type="text" placeholder="Pesquisar por Anime">
+                    <span title="Procurar anime" class="search" style="cursor: pointer;"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+                
+            </header>
+            <div class="lineHeade"></div>
+            <div class="lineHeader"></div>
+            <div class="lineHeader"></div>
+            <div style="width: 100%; border: 2px solid black;"></div>
+        </div>
 
-            <div class="inputContainer">
-                <input type="text" placeholder="Pesquisar por Anime">
-                <span title="Procurar anime" class="search" ><i class="fa-solid fa-magnifying-glass"></i></span>
+        <main>
+
+            <div class="bannerContainer">
+                <div class="banner">
+                    <ul>                                                                              
+                        <li>
+                            <div class="banner_01">
+                                <img src="src/images/banner_01.png">
+                                <h3>Seja bem-vindo ao AnimInfo, onde a magia dos animes ganha vida!</h3>
+                                <p>O seu destino definitivo para mergulhar no incrível universo dos animes.
+                                    Se você é um fã fervoroso ou apenas está começando a explorar esse mundo
+                                    fascinante, você veio ao lugar certo.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner_02">
+                                <img src="src/images/banner_02.png">
+                                <h3>No AnimInfo, estamos aqui para fornecer a você todas as informações
+                                    que você precisa sobre seus animes favoritos.</h3>
+                                <p>Desde sinopses envolventes até detalhes dos personagens mais amados, passando por análises,
+                                    trilhas sonoras envolventes e muito mais, temos tudo o que você precisa para se tornar 
+                                    um verdadeiro especialista em animes.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="banner_03">
+                                <img src="src/images/banner_03.png">
+                                <h3>Explore nossa vasta coleção de animes!</h3>
+                                <p>Descubra novas séries para maratonar e compartilhe suas descobertas com uma comunidade de apaixonados
+                                    por animes como você. Estamos animados para ter você a bordo!</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="paginationBanner">
+                <span class="dot" onclick="showSlide(0);"></span>
+                <span class="dot" onclick="showSlide(1);"></span>
+                <span class="dot" onclick="showSlide(2);"></span>
             </div>
             
-        </header>
-        <h1> Top 50 Mais Vistos</h1>
+
+            <h1> ANIMES MAIS POPULARES</h1>
+            <div class="lineMain"></div>
 
             <div class="containerAnimes"></div>
-
+        </main>
+        
 
         <footer>
             <h3>Feito por Saulo Lohan</h3>
@@ -37,8 +98,9 @@
         </footer>
     </div> 
 
-  <script src="https://kit.fontawesome.com/fcfce43a04.js" crossorigin="anonymous"></script>
-  <script src="/src/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/fcfce43a04.js" crossorigin="anonymous"></script>
+    <script src="/src//scripts/scripts.js"></script>
 </body>
 
 </html>
