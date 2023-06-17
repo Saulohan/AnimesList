@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animes Populares</title>
+  <link rel="icon" type="images/ico" href="src/images/shortLogo.ico"> 
+
   <link rel="stylesheet" href="./src/css/style.css">
 
 </head>
@@ -79,16 +81,37 @@
                 <span class="dot" onclick="showSlide(2);"></span>
             </div>
             
-
-            <h1> ANIMES MAIS POPULARES</h1>
+            <h1> MAIS BEM AVALIADOS</h1>
+                <div class="lineMain"></div>
+        
+            <div class="containerAnimesLastRealese"></div>
+            
+            <h1 id="h1AnimePopularity"> ANIMES MAIS POPULARES</h1>
             <div class="lineMain"></div>
 
             <div class="containerAnimes"></div>
+            
+            <h1 id="h1Gender">GÊNEROS</h1>
+            <div class="lineMain" data-value="GÊNEROS"></div>
+            
+            <div class="genderContainer">
+                <h3 class="gender" id="action" onclick="getAnimesByGender('action')">Ação</h3>
+                <h3 class="gender" id="fantasy" onclick="getAnimesByGender('fantasy')">Fantasia</h3>
+                <h3 class="gender" id="horror" onclick="getAnimesByGender('horror')">Terror</h3>
+                <h3 class="gender" id="comedy" onclick="getAnimesByGender('comedy')">Comedia</h3>
+                <h3 class="gender" id="adventure" onclick="getAnimesByGender('adventure')">Aventura</h3>
+            </div>
+            
+            <div id="lineGender" class="lineGender"></div>
+
+            <div class="containerAnimesGender"></div>
         </main>
         
 
         <footer>
-            <h3>Feito por Saulo Lohan</h3>
+            <p>Bem-vindo ao nosso site de informações de animes! Aqui você encontrará tudo o que precisa saber sobre os seus animes favoritos.
+                Utilizamos uma API confiável para fornecer dados atualizados, como sinopses, avaliações, personagens e muito mais.
+                Explore nossa coleção e descubra novos animes para assistir. Divirta-se e aproveite o mundo fascinante da animação japonesa!</p>
             <ul>
                 <a href="https://wa.me/5588996996447"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://www.instagram.com/sauloo_1/"><i class="fa-brands fa-instagram"></i></a>
