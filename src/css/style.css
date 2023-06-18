@@ -106,10 +106,7 @@ header a {
     text-align: left;
     align-items: center;
     justify-content: center;
-}/*
-.search {
-	border: 1px solid green;
-}*/
+}
 .inputContainer input::placeholder {
 	color: black;
 
@@ -432,7 +429,7 @@ footer ul a { align-items: center;
     .lineGender:before {background: linear-gradient(to right, white 8%, gray 8%);}
     .cardsLeft {padding: 0 5px;width: 90%;} 
     .cardsRigth { padding: 0 0px;width: 110%;color: black;margin-left: -15%;} 
-    .cardGender  {margin: 10px 0;border: 1px solid blue;height: auto}
+    .cardGender  {margin: 10px 0;;height: auto}
     .cardGender img {width: 55%;height: auto;min-height: 10px;margin-right: 2.5%;border-radius: 15px;}
     .cardGendertext {background-color: #D9D9D9;padding: 0 5px;width: 50%;height: auto;} 
     .cardGendertext h3 {font-size: 7px;padding-left: 4%;margin-bottom: 5px;} 
