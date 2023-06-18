@@ -319,13 +319,15 @@ function showNextSlide() {
 }
   
 function setLineWidthGender(){
-
-const margin = 30;
+  
+const screenWidth = window.innerWidth
+const margin = screenWidth > 640 ? 30 : 15;
+//const margin =  30;
 const actionWidth = document.getElementById('action').offsetWidth;
 const fantasyWidth = document.getElementById('fantasy').offsetWidth + actionWidth + margin;
 const horrorHorror = document.getElementById('horror').offsetWidth + fantasyWidth + margin;
 const comedyWidth = document.getElementById('comedy').offsetWidth + horrorHorror + margin;
-const adventureWidth = document.getElementById('adventure').offsetWidth + comedyWidth + margin;
+const adventureWidth = document.getElementById('adventure').offsetWidth + comedyWidth + margin;console.log(screenWidth);
 
 document.getElementById('action').addEventListener('click', function() {
   var lineGenderElement = document.querySelector('.lineGender');
@@ -360,11 +362,16 @@ document.getElementById('adventure').addEventListener('click', function() {
 }
 function setLineWidth(){
 const lineMainElements = document.querySelectorAll('.lineMain');
+const actionWidth = document.getElementById('action').offsetWidth;
+
+const lineGenderElement = document.querySelector('.lineGender');
+lineGenderElement.style.setProperty('--gradient-size', `${actionWidth}px`);
+lineGenderElement.classList.add('expanded');
 
 lineMainElements.forEach((lineMainElement, index) => {
  
   const h1TextWidth = document.querySelectorAll('h1')[index].offsetWidth;
- 
+
   lineMainElement.style.setProperty('--gradient-size', `${h1TextWidth}px`);
   lineMainElement.classList.add('expanded');
 });

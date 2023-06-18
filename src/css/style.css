@@ -49,14 +49,13 @@ header a {
 .headerLeft{
     display: flex;
     width: 60%;
-    justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .lineHeader {
     border: 2px solid black;
-    width: 100%;
+    width: calc(100% - 4px);
     margin-bottom: 5px;
 }
 
@@ -88,7 +87,7 @@ header a {
 .inputContainer {
     background-color: rgb(133, 133, 133);
 	border: 1px solid #000;
-    width: 270px;
+    width: 24%;
 	height: 30px;
 	border-radius: 10px;
 	text-align: left;
@@ -97,17 +96,20 @@ header a {
 }
 
 .inputContainer input {
-	width: 200px;
+	width: 80%;
 	height: 27px;
 	border: 1px solid transparent;
     background-color: transparent;
 	border-radius: 10px;
-	padding-left: 30px;
+	padding-left: 5%;
 	outline: none;
     text-align: left;
     align-items: center;
     justify-content: center;
-}
+}/*
+.search {
+	border: 1px solid green;
+}*/
 .inputContainer input::placeholder {
 	color: black;
 
@@ -117,7 +119,8 @@ header a {
 	-webkit-box-shadow: 0 0 0 1000px white inset !important;
 	border: none !important;
   }
-  .bannerContainer {
+
+.bannerContainer {
     display: flex;
 }
 
@@ -290,6 +293,7 @@ header a {
     width: 100%;
     height: 2px;
   }
+
   .lineGender.expanded::before {
     background: linear-gradient(to right, white var(--gradient-size), gray var(--gradient-size));
   }
@@ -382,7 +386,6 @@ header a {
     font-size: 14px;
 }
 
-
 footer {
     display: flex;    
     flex-wrap: wrap;
@@ -390,17 +393,355 @@ footer {
     justify-content: center;
     background: #23232e;
     font-weight: none;
-    height: 10vh;
+    height: 100%;
     color: white;
     width: 100%;
 
 }
+
 footer p {
     padding: 0 20%;
     font-size: 12px;
 }
+
 footer ul a { align-items: center;
     color: white;
     font-size: 25px;
     padding: 0 10px;
+}
+
+
+@media screen and  (max-width: 640px){
+
+    header{
+        padding: 0 10px;
+    }
+    
+    header a {    
+        font-size: 12px;
+        margin: 0 10px;   
+    }
+
+    .headerLeft img {  
+        width: 120px;
+        height: auto;
+    }
+
+    .headerLeft{
+        width: 70%;
+    }
+
+    .headerLink a{
+        margin: 3px;
+        font-size: 8px;
+    }
+
+    .inputContainer {
+        width: 24%;
+        height: 18px;
+        padding: 0;
+        margin: 0;   
+    }
+    
+    .inputContainer input {
+        width: 70%;
+        height: 15px;
+        padding-left: 5%;
+    }
+
+    .search {
+        font-size: 8px;
+    }
+
+    .inputContainer input::placeholder {
+        font-size: 7px; 
+    }
+
+    .container h1{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .banner ul li h3 {
+        width: 80%;
+        font-size: 10px;
+    }  
+    .banner ul li p {
+        width: 80%;
+        font-size: 6px;
+    }
+    .dot {
+        width: 5px;
+        height: 5px;  
+    }
+    .card h3 {
+        font-size: 10px;
+    } 
+    .card p {
+        font-size: 6px;
+    }
+    .genderContainer h3{
+        font-size: 10px;
+        margin: 15px 0;
+        margin-right:15px;
+    }
+    .lineGender:before {
+        background: linear-gradient(to right, white 8%, gray 8%);
+    }
+    .cardsLeft {
+        padding: 0 5px;
+        width: 90%;
+    } 
+    .cardsRigth { 
+
+        padding: 0 0px;
+        width: 110%;
+        color: black;
+        margin-left: -15%;
+    } 
+    .cardGender  {
+        margin: 10px 0;border: 1px solid blue;height: auto
+    }
+    .cardGender img {
+        width: 55%;
+        height: auto;
+        min-height: 10px;
+        margin-right: 2.5%;
+        border-radius: 15px;
+    }
+    .cardGendertext {
+        background-color: #D9D9D9;
+        padding: 0 5px;
+        width: 50%;
+        height: auto;
+    }     
+    .cardGendertext h3 {
+        font-size: 7px;
+        padding-left: 4%;
+        margin-bottom: 5px;
+    } 
+    .cardGendertext p {
+        font-size: 6px;
+    }
+    .cardDrescriptionText h3 {
+        font-size: 12px;
+    } 
+    .cardDrescriptionText p {
+        font-size: 6px;
+    }
+    footer {
+        height: 8vh; 
+    }
+    footer p {
+        padding: 0 10%;
+        font-size: 6px;
+        margin-bottom: -4%;
+    }
+    footer ul a {
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 1180px) {
+   
+    header a {    
+        font-size: 20px;
+        margin: 0 10px;   
+    }
+
+    .headerLeft img {  
+        width: 180px;
+        height: auto;
+    }
+
+    .headerLeft{
+        width: 70%;
+    }
+
+    .headerLink a{
+        margin: 3px;
+        font-size: 16px;
+    }
+
+    .inputContainer {
+        width: 24%;
+        height: 25px;
+        padding: 0;
+        margin: 0;   
+    }
+    
+    .inputContainer input {
+        width: 70%;
+        height: 22px;
+        padding-left: 5%;
+    }
+
+    .search {
+        font-size: 12px;
+    }
+
+    .inputContainer input::placeholder {
+        font-size: 10px; 
+    }
+
+    .banner ul li h3 {
+        width: 80%;
+        font-size: 16px;
+    }  
+    .banner ul li p {
+        width: 80%;
+        font-size: 12px;
+    }
+    .dot {
+        width: 8px;
+        height: 8px;  
+    }
+    .card h3 {
+        font-size: 10px;
+    } 
+    .card p {
+        font-size: 6px;
+    }
+
+    .genderContainer h3{
+        font-size: 14px;
+        margin: 15px 0;
+        margin-right:30px;
+    }
+    .lineGender:before {
+        background: linear-gradient(to right, white 8%, gray 8%);
+    }
+    .cardsLeft {
+        padding: 0 5px;
+        width: 90%;
+    } 
+    .cardsRigth { 
+
+        padding: 0 0px;
+        width: 110%;
+        color: black;
+        margin-left: -15%;
+    } 
+    .cardGender  {
+        margin: 10px 0;
+        height: auto;
+    }
+    .cardGender img {
+        width: 55%;
+        height: auto;
+        min-height: 10px;
+        margin-right: 2.5%;
+        border-radius: 15px;
+    }
+    .cardGendertext {
+        background-color: #D9D9D9;
+        padding: 0 5px;
+        width: 50%;align-items: center;
+        height: auto;
+        
+    }     
+    .cardGendertext h3 {
+        font-size: 9px;
+        padding-left: 4%;
+        margin-bottom: 5px;
+    } 
+    .cardGendertext p {
+        font-size: 8px;
+    }
+    .cardDrescriptionText h3 {
+        font-size: 14px;
+    } 
+    .cardDrescriptionText p {
+        font-size: 9px;
+    }
+    footer {
+        height: 10vh; 
+    }
+    footer p {
+        padding: 0 10%;
+        font-size: 7px;
+        margin-bottom: -2%;
+    }
+    footer ul a {
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 1180px) and (max-width: 1700px) {
+    header a {  
+        font-size: 20px;
+        margin: 0 10px;   
+    }
+
+    .headerLeft img {  
+        width: 180px;
+        height: auto;
+    }
+
+    .headerLeft{
+        width: 70%;
+    }
+
+    .headerLink a { 
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .inputContainer {
+        width: 24%;
+        height: 25px;
+        padding: 0;
+        margin: 0;   
+    }
+    
+    .inputContainer input {
+        width: 80%;
+        height: 22px;
+        padding-left: 5%;
+    }
+
+    .search {
+        font-size: 14px;
+    }
+
+    .inputContainer input::placeholder {
+        font-size: 12px; 
+    }
+
+    .banner ul li h3 {
+        width: 80%;
+        font-size: 24px;
+    }  
+    .banner ul li p {
+        width: 80%;
+        font-size: 14px;
+    }
+    .dot {
+        width: 8px;
+        height: 8px;  
+    }
+    .cardGendertext{margin: 0;padding: 2%;
+    }
+    .cardGender img {
+        width: 55%;
+        height: auto;
+        min-height: 10px;
+    }
+    .cardGendertext h3 {
+        font-size: 12px;
+        padding: 0;
+        margin-bottom: 5px;
+    } 
+    .cardGendertext p {
+        font-size: 10px;
+        padding: 0;
+    }
+    footer {
+        height: 10vh; 
+    }
+    footer p {
+        padding: 0 10%;
+        font-size: 9px;
+        margin-bottom: -1%;
+    }
+    footer ul a {
+        font-size: 12px;
+    }
 }
